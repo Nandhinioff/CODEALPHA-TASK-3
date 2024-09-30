@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEALPHA</title>
+    <link rel="icon" href="img/icon.ico">
+    <style>
+       
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body, html {
+  height: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow: hidden;
+}
+
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Dark shadow */
+  border-radius: 10px;
+}
+
+/* Content styles */
+
+.content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+
+/* Style for the button */
+button {
+  background-color: #22b9ff;
+  color: white;
+  border: none;
+  border-radius: 0px 10px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for the button */
+}
+
+button:hover {
+  background-color: #004363;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+        
+    </style>
+</head>
+<body>
+    <!------------------- Video as background ---------------->
+  <video autoplay muted loop class="video-background">
+    <source src="img/banner-gif.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+    <div class="container">
+        <div class="content">
+            <h1>CODEALPHA INTERNSHIP</h1>
+            <h3> Task -3 : Calculator</h3>
+        </div>
+        <button onclick="redirect()">View Project</button>
+    </div>
+    <script>
+        function redirect() {
+            window.location.href = "/index.html"; // 
+        }
+    </script>
+</body>
+</html>
